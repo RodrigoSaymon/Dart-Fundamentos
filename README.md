@@ -5,6 +5,7 @@
 ---
 ### *Conceitos importantes - Aula 1*
 ---
+<div align="center">
 
 <h6 p align="left">
 
