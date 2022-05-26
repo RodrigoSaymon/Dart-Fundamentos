@@ -1,4 +1,4 @@
-// tenho que iniciar as variaveis de nivel Superior no momento da criação
+// Tenho que iniciar as variaveis de nivel Superior no momento da criação
 String nomeCompletoSuperior = 'Rodrgio';
 
 void mian() {
