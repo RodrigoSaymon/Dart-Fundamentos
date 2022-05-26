@@ -1,17 +1,17 @@
+<h1> <align="/center">
+<h1> <align="/center">
 
-
-<h1> <align="/center">
-<h1> <align="/center">
-<h1> <align="/center">
 Dart Fundamentos
+<div> 
 
-<div>
-
-<h1> <align="/center">
+---
+<h6> <align="/center">
 
 <img width="40" height ="40" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  *Conceitos importantes - Aula 1*
+
 ---
 ---
+
 <div align="center">
 
 <h6 p align="left">
