@@ -1,5 +1,58 @@
-(center) # `Rodrigo` (/center)
-     
+<h1><width align="center">
+
+# **Dart Fundamentos** <img width="50" height ="50" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"> 
+
+---
+### *Conceitos importantes - Aula 1*
+---
+
+<h6 p align="left">
+
+```dart
+// tudo dento do Dart é um Objeto
+// classe de nivel Superior
+
+String nomeCompleto = 'Rodrigo Saymon';
+
+void main() {
+  String nome = 'Teste';
+
+  print(nome);
+
+  int idade = 36;
+}
+
+class Rodrigo {
+  void main(List<String> args) {
+    String nome = 'Teste';
+
+    print(nome);
+    int Idade = 36;
+  }
+}
+````
+<h6>Código desenvolvido no curso Academia do Flutter 2.0 administrado por Rodrigo Rahman.</h6>
+
+<img width="50" height = "50" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"/>
+<img width="700" height = "730" src="https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true"/>
+
+
+<h1>Dart Fundamentos</h1>
+<div>
+
+<div align="center">
+<h1>Dart Fundamentos</h1>
+<div align="center">
+<h1 align="/center">
+<h2>Resumo Dart – Modulo 3</h2>
+</div>
+<h4 p align="left">  Aula 1: </h4>
+
+![][codigo]
+
+[codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true
+
+https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true
 
 > esse negocio de citação é muito divertido  
 > vou tentar usar sempre que posivel  
@@ -13,9 +66,23 @@
 rodrigo ```  
   
 
-![][imagem]
+<div align="center">
+<h2><p align="left">  <img width="25" height = "25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="25" height="25"/>  Conceitos importantes</h2>
 
-[imagem]:https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/LogoDart.png?raw=true
+   |Aula| conteúdo
+
+===  
+*Rodrigo*
+===
+
+``` dart    
+  void main(){
+
+    print('Rodrigo');
+}
+```
+<center> bom dia
+
 
  ---
  ---
@@ -29,34 +96,6 @@ rodrigo ```
  |:------:|-----|:---------:|
  | 01   |     |Variáveis erereretet|
  | 02   |     |Nullsafety|
-
-
-
-   |Aula| conteúdo
-
-===  
-*Rodrigo*
-===
-
-```` dart    
-  void main(){
-
-    print('Rodrigo');
-}
-````
-<center> bom dia
-
-<div>
-
-<div align="center">
-<h1>Dart Fundamentos</h1>
-<div align="center">
-<h1 align="/center">
-<h2>Resumo Dart – Modulo 3</h2>
-</div>
-<h4 p align="left">  Aula 1: </h4>
-
-<h2><p align="left">  <img width="25" height = "25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="25" height="25"/>  Conceitos importantes</h2>
 
 </div>
 <h4 p align="left">   ⚪   Objeto – tudo dentro do Dart é um objeto;</h4>
