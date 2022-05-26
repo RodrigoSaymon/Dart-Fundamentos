@@ -1,8 +1,12 @@
-<h1><width <div align="center">
 
-# **Dart Fundamentos**
+<h2> <align="/center">
+<h2> <align="/center">
+<h1> <align="/center">
 
----
+ **Dart Fundamentos**
+
+<h1> <align="/center">
+
 <img width="40" height ="40" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  *Conceitos importantes - Aula 1*
 ---
 ---
