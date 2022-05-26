@@ -1,7 +1,8 @@
+![][codigo]
+<h1 align="center"> <img width="100" height = "100" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
 
-<h1 align="center"> <img width="100" height = "100" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"/>
-
-**Dart Fundamentos - Modúlo 3** </h1> 
+**Dart Fundamentos - Modúlo 3** 
+![][codigo]
 <h1 p align="left">
 <img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Conceitos importantes - Aula 1
 
@@ -42,13 +43,14 @@ class Rodrigo {
 <h3 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
 
 ---
-![][codigo]
+![][codigo2]
 
 
 
 
-[codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-3.jpg?raw=true
+[codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
 
+[codigo2]: https://www.zealousweb.com/wp-content/uploads/2021/10/Banner-3.jpg
 
 
 > esse negocio de citação é muito divertido  
