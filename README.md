@@ -47,7 +47,7 @@ class Rodrigo {
 
 ![][codigo]
 
-[codigo]: https://www.zealousweb.com/wp-content/uploads/2021/10/Banner-3.jpg
+[codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-3.jpg?raw=true
 
 https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true
 
