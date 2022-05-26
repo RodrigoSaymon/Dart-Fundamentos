@@ -48,6 +48,8 @@ class Rodrigo {
 ---
 <h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
 
+---
+
 ![][codigo2] 
 
 [<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
@@ -71,6 +73,8 @@ class Rodrigo {
 
 ---
 <h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
 
 ![][codigo2]
 
@@ -126,6 +130,8 @@ void main() {
 
 <h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
 
+---
+
 ![][codigo2] 
 
 
@@ -166,7 +172,10 @@ void mian() {
 }
 ````
 ---
+
 <h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
 
 ![][codigo2] 
 
