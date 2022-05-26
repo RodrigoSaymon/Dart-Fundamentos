@@ -1,4 +1,4 @@
-![][codigo]
+
 <h1 align="center"> <img width="100" height = "100" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"/>
 
 **Dart Fundamentos - Modúlo 3** </h1> 
@@ -42,14 +42,14 @@ class Rodrigo {
 <h3 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
 
 ---
-
 ![][codigo]
 
-![][codigo]
+
+
 
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-3.jpg?raw=true
 
-https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true
+
 
 > esse negocio de citação é muito divertido  
 > vou tentar usar sempre que posivel  
