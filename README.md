@@ -1,20 +1,19 @@
-<h1> <align="/center">
-<h1> <align="/center">
+![][codigo]
+<h1 align="center"> <img width="100" height = "100" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"/>
 
-Dart Fundamentos
-<div> 
+**Dart Fundamentos - Modúlo 3** </h1> 
+<h1 p align="left">
+<img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Conceitos importantes - Aula 1
+
+<h3>
+
+- **Objeto** – tudo dentro do Dart é um objeto;
+- **Classe** – descreve o mundo real;
+- **Variável ou Atributo** – espaço de memória alocado para determinado dado;
+- **Função ou Método** – bloco de instruções que resolve determinado problema.
+<h4 p align="left">
 
 ---
-<h6> <align="/center">
-
-<img width="40" height ="40" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  *Conceitos importantes - Aula 1*
-
----
----
-
-<div align="center">
-
-<h6 p align="left">
 
 ```dart
 // tudo dento do Dart é um Objeto
@@ -39,26 +38,16 @@ class Rodrigo {
   }
 }
 ````
-<h6>Código desenvolvido no curso Academia do Flutter 2.0 administrado por Rodrigo Rahman.</h6>
+---
+<h3 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
 
-<img width="50" height = "50" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"/>
-<img width="700" height = "730" src="https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true"/>
+---
 
 
-<h1>Dart Fundamentos</h1>
-<div>
-
-<div align="center">
-<h1>Dart Fundamentos</h1>
-<div align="center">
-<h1 align="/center">
-<h2>Resumo Dart – Modulo 3</h2>
-</div>
-<h4 p align="left">  Aula 1: </h4>
 
 ![][codigo]
 
-[codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true
+[codigo]: https://www.zealousweb.com/wp-content/uploads/2021/10/Banner-3.jpg
 
 https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafety.png?raw=true
 
@@ -70,9 +59,7 @@ https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Nullsafet
 
 [Linkediem](https://www.linkedin.com/in/rodrigotbass/)
 
-  
-rodrigo ```  
-  
+
 
 <div align="center">
 <h2><p align="left">  <img width="25" height = "25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="25" height="25"/>  Conceitos importantes</h2>
@@ -105,12 +92,7 @@ rodrigo ```
  | 01   |     |Variáveis erereretet|
  | 02   |     |Nullsafety|
 
-</div>
-<h4 p align="left">   ⚪   Objeto – tudo dentro do Dart é um objeto;</h4>
-<h4 p align="left">   ⚪   Classe – descreve o mundo real;</h4>
-<h4 p align="left">   ⚪   Variável ou Atributo – espaço de memória alocado para determinado dado;</h4>
-<h4 p align="left">   ⚪   Função ou Método – bloco de instruções que resolve determinado problema.</h4>  
-  <div align="center">
+
     
 <h1 align="/center">  
 <img src="https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/code1.png?raw=true" width="500px"/></h1>
