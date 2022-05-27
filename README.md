@@ -185,6 +185,52 @@ void mian() {
 
 ![][codigo] 
 
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Modificadores - Aula 4
+
+<h2><p align="left">
+
+- **Final** 
+   - Pode ser usada no momento de Execução;
+   - Torna imutável;
+   - No código abaixo - nomeCompleto funciona porque é criada em tempo de execução.
+- **Const** 
+   - Só pode ser usada em momento de Compilação;
+   - Torna imutável;
+   - Só pode receber valores de variáveis que sejam Const;
+   - No código abaixo - nomeCompleto não funciona porque é criada em tempo de complicação.
+
+<h4><p align="left">
+
+````dart
+void main() {
+  var nomeCompleto = 'Rodrigo Saymon';
+  print(nomeCompleto);
+  nomeCompleto = 'Rodrigo Saymon';
+  print(nomeCompleto);
+
+  // Final 
+  final nomeCompletoFinal = 'Rodrigo Saymon';
+  final nomeCompletoFinal2 = nomeCompleto; 
+
+  // Const
+  const nomeCompletoConst = 'Rodrigo Saymon';
+  const nomeCompletoConst2 = nomeCompleto;
+}
+````
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
 
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
 
