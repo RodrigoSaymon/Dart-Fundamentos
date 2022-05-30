@@ -232,6 +232,206 @@ void main() {
 ![][codigo] 
 
 
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Operadores condicionais - Aula 5
+
+<h2><p align="left">
+
+- **If e Else** 
+   - Faça uma coisa, se não, faça outra.
+
+<h4><p align="left">
+
+```dart
+void main(){
+
+final idade = 16;
+
+// Idade é maior de 18 anos para ter Habilitação
+
+if (idade>18){
+    print('Pode tirar Habilitação');
+} else if (idade == 18){
+    print('Pode tirar Habilitação');
+}
+else {
+    print ('não pode tirar habilitação');
+}
+}
+```
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Operadores Relacionais
+ - Aula 5.1
+
+<h2><p align="left">
+
+- **==** (Igual)
+- **!=** (Diferente)
+- **>** (Maior)
+- **<** (Menor)
+- **>=** (Maior/igual)
+- **<=** (Menor/igual)
+
+<h4><p align="left">
+
+```dart
+void main() {
+// Operadores relacionais
+
+  final idade = 18;
+  final tipoPet = 'Gato';
+
+  // regra de negocio
+  if (idade == 18) {
+    print('pode tirar habilitação');
+  }
+  if (idade > 17) {
+    print('pode tirar habilitação');
+  }
+  if (idade >= 18) {
+    print('pode tirar habilitação');
+  }
+  if (tipoPet != 'Cachorro') {
+    print('pode tirar habilitação');
+  }
+}
+```
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Operadores Lógicos - Aula 5.2
+
+<h2><p align="left">
+
+- && (E)
+- || (Ou)
+- ! (Não)
+
+<h4><p align="left">
+
+```dart
+void main() {
+  // operadooires Lógicos
+  // && (E), || (Ou), ! (Não)
+
+  final idade = 18;
+  final sexo = "M";
+
+  // if (sexo == 'M') {
+  //   if (idade >= 18) {
+  //     print('pode entrar');
+  //   } else {
+  //     print('Não pode entar');
+  //   }
+  //   } else {
+  //     print('Não pode entar');
+  //   }
+
+ // && (E) - As duas condiçõe precisam ser verdade
+  if (sexo == 'M' && idade >= 18) {
+    print('pode entrar');
+  }else {
+    print('Não pode entrar');
+  }
+
+// || (Ou) - Pelo menos uma condiçõe precisam ser verdade
+   if (sexo == 'M' || idade >= 18) {
+    print('pode entrar');
+  }else {
+    print('Não pode entrar');
+  }
+
+// ! (Não) - Inverte o sentido da condição
+     if (!(sexo == 'M' || idade >= 18)) {
+    print('pode entrar');
+  }else {
+    print('Não pode entrar');
+  }
+}
+
+```
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Ternários - Aula 5.3
+
+<h2><p align="left">
+
+- ? (Então faça)
+- : (Se não)
+
+<h4><p align="left">
+
+````dart
+void main() {
+  final idade = 12;
+
+  if (idade >= 18) {
+    print('maior de idade');
+  } else {
+    print('menor de idade');
+  }
+//  (condição) ? faça algo : outra coisa
+  final eMaiorDeIdade = idade >= 18 ? true : false;
+  print('e maior de idade' + eMaiorDeIdade.toString());
+}
+
+// resto da divisão = 0;
+// ano % 4 == 0 
+````
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
+
+
+
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
 
 [codigo2]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-2.jpg?raw=true
