@@ -428,6 +428,81 @@ void main() {
 
 ![][codigo] 
 
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Switchs - Aula 6
+
+<h2><p align="left">
+
+- **switchs** - Faz a comparação no metodo igual igual **(==)**.
+- **case** - Condição;
+- **break** - Ponto de parada;
+- **default:** - Semelhante ao else.
+
+<h4><p align="left">
+
+````dart
+void main() {
+  final diaDaSemana = 1;
+  var diaDaSemanaStr = '';
+
+  // if (diaDaSemana == 0) {
+  //   diaDaSemanaStr = 'Segunda-Feira';
+  // } else if (diaDaSemana == 1) {
+  //   diaDaSemanaStr = 'Terça-Feira';
+  // } else {
+  //   diaDaSemanaStr = 'Não identificado';
+  // }
+
+  switch (diaDaSemana) {
+    case 0:
+      diaDaSemanaStr = 'Domingo';
+      break;
+    case 1:
+      diaDaSemanaStr = 'Segunda-Feira';
+      break;
+    default:
+      diaDaSemanaStr = 'Não identificado';
+      break;
+  }
+  print(diaDaSemanaStr);
+
+  final idede = 18;
+
+  if (idede == 18) {
+    print('maior de idade');
+  } else if (idede == 19) {
+    print('maior de idade');
+  } else {
+    print('menor de idade');
+  }
+
+// se os caso do case forem iguais, posso juntar os case's
+  switch (diaDaSemana) {
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+      print('maior de idade');
+      break;
+    default:
+      print('menor de idade');
+      break;
+  }
+}
+````
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
 
 
 
