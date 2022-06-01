@@ -505,6 +505,111 @@ void main() {
 
 
 
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Trabalhando com Nulos - Aula 7
+
+<h2><p align="left">
+
+- Tenho que iniciar as variaveis de nivel Superior no momento da criação;
+- Variaveis locais podem ser criadas e depois promovidas a não null;
+- Promoção - Checagem (If/Else) ou validação (atribuir valor);
+- **?** - Converte variáveis nulas em não nulas;
+- **! (Forçar)** – eu garanto que variável não é nula.
+
+<h4><p align="left">
+
+```dart
+// variavei de nivel superior precisam obrigatóriamente ser inicializada
+String? nomeSuperior;
+
+void main() {
+  String nome = '';
+
+// Aceita nulo
+  String? nomeNulo;
+// nao posso acessar metodos em uma função nula
+// a não ser que sejá feito uma checagem
+// ou a variavel seja promovida para não nula
+
+  if (nomeNulo != null) {
+    nomeNulo.isEmpty;
+  }
+
+  nome.isEmpty;
+
+  var nomeLocal = nomeSuperior;
+  if (nomeLocal != null) {
+    nomeLocal.isEmpty;
+  }
+  print(nomeLocal);
+
+  nomeSuperior = '';
+  nomeSuperior!.isEmpty;
+}
+```
+
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Checagem de Nulo - Aula 7.1
+
+<h2><p align="left">
+
+- **Pode ser das seguintes formas:**
+   - **if** convencional;
+   - Null Aware Operator
+   - Conditional Property Access
+
+<h4><p align="left">
+
+```dart
+String? nomeCompleto;
+void main() {
+
+  // if convencional
+  if (nomeCompleto != null) {
+    print(nomeCompleto!.toLowerCase());
+  } else {
+    print('Nome não preenchido');
+  }
+
+  //  Null Aware Operator
+  var nomeCompletoLocal = nomeCompleto ?? 'Nome não preenchido';
+  print(nomeCompletoLocal);
+
+  // Conditional Property Access
+  // ? - condição (se variavel não for nula execute a função)
+  // se for nula print ('Null') ou (??) print ('Nome não preenchido');
+  print(nomeCompleto?.toLowerCase() ?? 'Nome não preenchido');
+}
+```
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
 
 
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
