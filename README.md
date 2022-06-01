@@ -509,9 +509,8 @@ void main() {
 
 <h2><p align="left">
 
-- Variaveis de nivel Superior precisam ser inicializadas;
-- Variaveis locais podem ser criadas e depois promovidas a não null;
-- Promoção - checagem de null ou validação (atribuir valor);
+Variaveis de nivel Superior precisam ser inicializadas no momento de sua criação. As variaveis locais podem ser criadas e depois promovidas a não null. Os Metodos e Interables não podem ser acessados em variáveis nulas, a não ser que sejá promovida para não nula com checagem ou atribuição de valor.
+
 - **?** - Converte variáveis nulas em não nulas;
 - **! (Forçar)** – eu garanto que variável não é nula.
 
@@ -526,9 +525,7 @@ void main() {
 
 // Aceita nulo
   String? nomeNulo;
-// nao posso acessar metodos em uma função nula
-// a não ser que sejá feito uma checagem
-// ou a variavel seja promovida para não nula
+
 
   if (nomeNulo != null) {
     nomeNulo.isEmpty;
