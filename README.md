@@ -511,8 +511,10 @@ void main() {
 
 Variaveis de nivel Superior precisam ser inicializadas no momento de sua criação. As variaveis locais podem ser criadas e depois promovidas a não null. Os Metodos e Interables não podem ser acessados em variáveis nulas, a não ser que sejá promovida para não nula com checagem ou atribuição de valor.
 
+---
 - **?** - Converte variáveis nulas em não nulas;
 - **! (Forçar)** – eu garanto que variável não é nula.
+---
 
 <h4><p align="left">
 
