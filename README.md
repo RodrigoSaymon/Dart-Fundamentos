@@ -509,9 +509,9 @@ void main() {
 
 <h2><p align="left">
 
-- Tenho que iniciar as variaveis de nivel Superior no momento da criação;
+- Variaveis de nivel Superior precisam ser inicializadas;
 - Variaveis locais podem ser criadas e depois promovidas a não null;
-- Promoção - Checagem (If/Else) ou validação (atribuir valor);
+- Promoção - checagem de null ou validação (atribuir valor);
 - **?** - Converte variáveis nulas em não nulas;
 - **! (Forçar)** – eu garanto que variável não é nula.
 
