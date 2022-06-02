@@ -625,25 +625,208 @@ var listNumero = <Int>[1, 2 3];
 </center>
 <h2><p align="left">
 
-- <**Int**> - Define o tipo de lista;  
+- <**Int**> - Define o tipo de lista;
+
+<h4><p align="left">
+
+```dart
+List <String> ListNomes = ['Rodrigo', 'Elã','Heitor'];
+```
+<h2><p align="left">
+
 - **<  >?** - Lista pode ser nula;
+
+<h4><p align="left">
+
+```dart
+List<String>? nomeNulos;
+```
+<h2><p align="left">
+
 - **< ? >** - Itens podem ser nulos;
+
+<h4><p align="left">
+
+```dart
+var nomeInternoAceitaNulos =<String?> ['Rodrigo', null];
+```
+<h2><p align="left">
+
 - **<**?**>?** - Lista e itens podem ser nulos;
+<h4><p align="left">
+
+```dart
+List<String?>? nomeInternoAceitaNulos1 = null;
+```
+<h2><p align="left">
+
 - **numero.add(1)** -Adiciona item na lista;
+<h4><p align="left">
+
+```dart
+  final numero = [1, 2, 3, 4];
+  numero.add(1);
+  print(numero);
+
+  nomes.add('Helena');
+  print(nomes);
+```
+<h2><p align="left">
+
 - **numero.add(1[2])** - Define a posição em que o item vai ser adicionado;
+
+<h4><p align="left">
+
+```dart
+// indice            0        1       2
+  final nomes = ['Rodriog', 'Elã', 'Heitor'];
+ 
+  print('Adicionando Hian a lista');
+  nomes.insert(0, 'Hian');
+
+  print(nomes[0]);
+```
+<h2><p align="left">
+
 - **Nome.addAll([1, 2, 3])** - Adiciona lista dentro de outra;
-- **Nome.remove ('rodrigo')** - Remove item da lista;
+
+<h4><p align="left">
+
+```dart
+final nomes = ['Rodriog', 'Elã', 'Heitor'];
+nomes.addAll(['Rodriog 2', 'Elã 2', 'Heitor 2']);
+print(nomes);
+  ```
+<h2><p align="left">
+
+- **Nome.remove ('Rodrigo')** - Remove item da lista;
+
+<h4><p align="left">
+
+```dart
+  nomes.remove('Rodrigo');
+  print(nomes);
+  ```
+<h2><p align="left">
+
 - **Nome.removeWhere ('nome')** - Remove item da lista através de uma regra (If/Else);
+
+<h4><p align="left">
+
+```dart
+  nomes.removeWhere((nome) {
+    print('Nome procurado $nome');
+    if (nome == 'Rodrigo') {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  print(nomes);
+  ```
+
+  <h2><p align="left">
+
 - **Print (nome[0])** - Imprimi item na posição indicada;
+
+<h4><p align="left">
+
+```dart
+print(nomes[0]);
+```
+<h2><p align="left">
+
 - **Print (nome.length)** - Imprimi quantidade de itens da lista;
+<h4><p align="left">
+
+```dart
+  print(nomes.length - 1);
+  ```
+
+  <h2><p align="left">
+
 - **Print (nome.first)** - Imprimi primeiro item da lista;
+
+<h4><p align="left">
+
+```dart
+  print(nomes.first);
+
+  // OU atraves de uma condição
+    var primeiroNome = nomes.firstWhere((nome) {
+    print(nome);
+    if (nome == 'Elã 2') {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  print(primeiroNome);
+  ```
+
+  <h2><p align="left">
+
 - **Print (nome.last)** - Imprimi último item da lista;
+
+<h4><p align="left">
+
+```dart
+  print(nomes.last);
+  ```
+  <h2><p align="left">
+
 - **List.generate (10, (Index) Index + 1)** - Gera uma lista de 1 a 10;
+
+<h4><p align="left">
+
+```dart
+  final numerosGerado = List.generate(10, (index) => index + 1);
+  print(numerosGerado);
+
+  // Ou de Strings
+  final StringsGerado = List.generate(10, (index) => 'Index ${index + 1}');
+  print(StringsGerado);
+  ```
+<h2><p align="left">
+
 - **SomaDeNumeros.fold** - Soma os itens da lista;
-- **List.filled (10, 'rodrigo')**; - Repete o nome Rodrigo 10x;
+
+<h4><p align="left">
+
+```dart
+  final numerosGeradosParaCalculo = List.generate(100, (index) => index + 1);
+
+  var soma = numerosGeradosParaCalculo.fold<int>(
+    0,
+    (previousValue, numero) => previousValue = previousValue + numero,
+  );
+  print(soma);
+  ```
+
+  <h2><p align="left">
+
+- **List.filled (10, 'Rodrigo')**; - Repete o nome Rodrigo 10x;
+
+<h4><p align="left">
+
+```dart
+  final repeticoes = List.filled(10, 'Rodrigo');
+  print(repeticoes);
+  ```
+<h2><p align="left">
+
 - **Var lista1 = [1, 2, 3, ...lista2]** - Adiciona uma lista dentro da outra;
 
+<h4><p align="left">
 
+```dart
+  var listaNumerosSpresdB = [4, 5, 6];
+
+  var listaNumerosSpresd = [1, 2, 3, ...listaNumerosSpresdB];
+  print(listaNumerosSpresd);
+  ```
+
+<h2><p align="left">
 
 - **Collection If** - Através de uma regra, adiciona itens na lista;
 
@@ -661,8 +844,8 @@ var promocaoAtiva = true;
 ```
 <h2><p align="left">
 
-- **Collection for** - Faz um loop e gera uma lista.
-</center>
+- **Collection for** - Faz um loop e gera uma lista;
+
 <h4><p align="left">
 
 ```dart
@@ -670,84 +853,13 @@ var promocaoAtiva = true;
   var listaString = ['#0', '#1', for (var i in listaInts) '#$i'];
   print(listaString);
 ```
+<h2><p align="left">
 
+- **ListaString.join('->')** - Adiciona um separador.
 
 <h4><p align="left">
 
 ```dart
-void main() {
-  final numero = [1, 2, 3, 4];
-  print(numero);
-  numero.add(1);
-  print(numero);
-
-// indice            0        1       2
-  final nomes = ['Rodriog', 'Elã', 'Heitor'];
-  print(nomes);
-
-//             4
-  nomes.add('Helena');
-  nomes.addAll(['Rodriog 2', 'Elã 2', 'Heitor 2']);
-  print(nomes);
-  print(nomes[0]);
-  print(nomes[2]);
-
-  print('Adicionando Hian a lista');
-  nomes.insert(0, 'Hian');
-  print(nomes);
-  print(nomes[0]);
-
-  nomes.remove('heitor 2');
-  print(nomes);
-
-  nomes.removeWhere((nome) {
-    print('Nome procurado $nome');
-    if (nome == 'Rodrigo') {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  print(nomes);
-
-  print(nomes.length - 1);
-// Primeiro nome
-  print(nomes.first);
-  // ultimo nome
-  print(nomes.last);
-
-  var primeiroNome = nomes.firstWhere((nome) {
-    print(nome);
-    if (nome == 'Elã 2') {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  print(primeiroNome);
-
-  final numerosGerado = List.generate(10, (index) => index + 1);
-  print(numerosGerado);
-
-  final StringsGerado = List.generate(10, (index) => 'Index ${index + 1}');
-  print(StringsGerado);
-
-  final repeticoes = List.filled(10, '');
-  print(repeticoes);
-
-  final numerosGeradosParaCalculo = List.generate(100, (index) => index + 1);
-
-  var soma = numerosGeradosParaCalculo.fold<int>(
-    0,
-    (previousValue, numero) => previousValue = previousValue + numero,
-  );
-  print(soma);
-
-  var listaNumerosSpresdB = [4, 5, 6];
-
-  var listaNumerosSpresd = [1, 2, 3, ...listaNumerosSpresdB];
-  print(listaNumerosSpresd);
-
   var string = listaString.join('->');
   print(string);
 }
