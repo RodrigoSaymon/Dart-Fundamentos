@@ -625,7 +625,7 @@ var listNumero = <Int>[1, 2 3];
 </center>
 <h2><p align="left">
 
-- <**Int**> - Define o tipo de lista. se vazia, e não definido, o Dart entende como Dynamic;  
+- <**Int**> - Define o tipo de lista;  
 - **<  >?** - Lista pode ser nula;
 - **< ? >** - Itens podem ser nulos;
 - **<**?**>?** - Lista e itens podem ser nulos;
@@ -650,8 +650,14 @@ var listNumero = <Int>[1, 2 3];
 <h4><p align="left">
 
 ```dart
-var promoçãoAtiva = true;
-var produto = ['cerveja', 'refrigerante', If(promoçãoAtiva) 'suco'];
+var promocaoAtiva = true;
+
+  var produtos = [
+    'Cerveja',
+    'Refrigerante',
+    if (promocaoAtiva) 'Suco de Laranja'
+  ];
+  print(produtos);
 ```
 <h2><p align="left">
 
@@ -660,8 +666,9 @@ var produto = ['cerveja', 'refrigerante', If(promoçãoAtiva) 'suco'];
 <h4><p align="left">
 
 ```dart
-var lista = [1, 2, 3];
-var listaString =[ for (var i in lista) 'Número $i'];
+  var listaInts = [1, 2, 3];
+  var listaString = ['#0', '#1', for (var i in listaInts) '#$i'];
+  print(listaString);
 ```
 
 
@@ -740,20 +747,6 @@ void main() {
 
   var listaNumerosSpresd = [1, 2, 3, ...listaNumerosSpresdB];
   print(listaNumerosSpresd);
-
-  var promocaoAtiva = true;
-
-  var produtos = [
-    'Cerveja',
-    'Refrigerante',
-    if (promocaoAtiva) 'Suco de Laranja'
-  ];
-  print(produtos);
-
-  //  Collection For
-  var listaInts = [1, 2, 3];
-  var listaString = ['#0', '#1', for (var i in listaInts) '#$i'];
-  print(listaString);
 
   var string = listaString.join('->');
   print(string);
