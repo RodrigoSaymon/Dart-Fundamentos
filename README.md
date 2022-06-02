@@ -611,6 +611,170 @@ void main() {
 
 
 
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Listas - Aula 8
+
+<h2><center>
+
+**Estrutura de uma lista:**
+
+
+```dart
+var listNumero = <Int>[1, 2 3];
+``` 
+</center>
+<h2><p align="left">
+
+- <**Int**> - Define o tipo de lista. se vazia, e não definido, o Dart entende como Dynamic;  
+- **<  >?** - Lista pode ser nula;
+- **< ? >** - Itens podem ser nulos;
+- **<**?**>?** - Lista e itens podem ser nulos;
+- **numero.add(1)** -Adiciona item na lista;
+- **numero.add(1[2])** - Define a posição em que o item vai ser adicionado;
+- **Nome.addAll([1, 2, 3])** - Adiciona lista dentro de outra;
+- **Nome.remove ('rodrigo')** - Remove item da lista;
+- **Nome.removeWhere ('nome')** - Remove item da lista através de uma regra (If/Else);
+- **Print (nome[0])** - Imprimi item na posição indicada;
+- **Print (nome.length)** - Imprimi quantidade de itens da lista;
+- **Print (nome.first)** - Imprimi primeiro item da lista;
+- **Print (nome.last)** - Imprimi último item da lista;
+- **List.generate (10, (Index) Index + 1)** - Gera uma lista de 1 a 10;
+- **SomaDeNumeros.fold** - Soma os itens da lista;
+- **List.filled (10, 'rodrigo')**; - Repete o nome Rodrigo 10x;
+- **Var lista1 = [1, 2, 3, ...lista2]** - Adiciona uma lista dentro da outra;
+
+
+
+- **Collection If** - Através de uma regra, adiciona itens na lista;
+
+<h4><p align="left">
+
+```dart
+var promoçãoAtiva = true;
+var produto = ['cerveja', 'refrigerante', If(promoçãoAtiva) 'suco'];
+```
+<h2><p align="left">
+
+- **Collection for** - Faz um loop e gera uma lista.
+</center>
+<h4><p align="left">
+
+```dart
+var lista = [1, 2, 3];
+var listaString =[ for (var i in lista) 'Número $i'];
+```
+
+
+<h4><p align="left">
+
+```dart
+void main() {
+  final numero = [1, 2, 3, 4];
+  print(numero);
+  numero.add(1);
+  print(numero);
+
+// indice            0        1       2
+  final nomes = ['Rodriog', 'Elã', 'Heitor'];
+  print(nomes);
+
+//             4
+  nomes.add('Helena');
+  nomes.addAll(['Rodriog 2', 'Elã 2', 'Heitor 2']);
+  print(nomes);
+  print(nomes[0]);
+  print(nomes[2]);
+
+  print('Adicionando Hian a lista');
+  nomes.insert(0, 'Hian');
+  print(nomes);
+  print(nomes[0]);
+
+  nomes.remove('heitor 2');
+  print(nomes);
+
+  nomes.removeWhere((nome) {
+    print('Nome procurado $nome');
+    if (nome == 'Rodrigo') {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  print(nomes);
+
+  print(nomes.length - 1);
+// Primeiro nome
+  print(nomes.first);
+  // ultimo nome
+  print(nomes.last);
+
+  var primeiroNome = nomes.firstWhere((nome) {
+    print(nome);
+    if (nome == 'Elã 2') {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  print(primeiroNome);
+
+  final numerosGerado = List.generate(10, (index) => index + 1);
+  print(numerosGerado);
+
+  final StringsGerado = List.generate(10, (index) => 'Index ${index + 1}');
+  print(StringsGerado);
+
+  final repeticoes = List.filled(10, '');
+  print(repeticoes);
+
+  final numerosGeradosParaCalculo = List.generate(100, (index) => index + 1);
+
+  var soma = numerosGeradosParaCalculo.fold<int>(
+    0,
+    (previousValue, numero) => previousValue = previousValue + numero,
+  );
+  print(soma);
+
+  var listaNumerosSpresdB = [4, 5, 6];
+
+  var listaNumerosSpresd = [1, 2, 3, ...listaNumerosSpresdB];
+  print(listaNumerosSpresd);
+
+  var promocaoAtiva = true;
+
+  var produtos = [
+    'Cerveja',
+    'Refrigerante',
+    if (promocaoAtiva) 'Suco de Laranja'
+  ];
+  print(produtos);
+
+  //  Collection For
+  var listaInts = [1, 2, 3];
+  var listaString = ['#0', '#1', for (var i in listaInts) '#$i'];
+  print(listaString);
+
+  var string = listaString.join('->');
+  print(string);
+}
+```
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
 
 [codigo2]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-2.jpg?raw=true
