@@ -879,6 +879,233 @@ var promocaoAtiva = true;
 
 ![][codigo] 
 
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Loops - Aula 9
+
+<h2><p align="left">
+
+- **For convencional** - Executa até que uma condição seja verdadeira:
+
+```dart
+// início   +   condição     + incremento
+For(var i= 0; i<números.length; i++){
+Print(números[ i ]);
+
+```
+- **Break** - para de executar quando encontra o item desejado;
+- **Continue** - pula quando encontra o item desejado;
+
+- **For in** - Varre a lista e joga cada índice para dentro da nova variável.
+
+```dart
+For (var nome in nomes){
+Print (nome);
+```
+
+<h4><p align="left">
+
+```dart
+void main() {
+  var numeros = List.generate(10, (index) => index);
+  var nomes = ['Rodrigo', 'Elã', 'Heitor', 'Helena', 'Hian'];
+
+  print('Imprimindo numeros com for convencional');
+  for (var i = 0; i < numeros.length; i++) {
+    print(numeros[i]);
+  }
+
+  print('Imprimindo nomes com for convencional');
+  for (var i = 0; i < nomes.length; i++) {
+    print(nomes[i]);
+  }
+
+  print('Imprimindo numero com for in');
+  for (var numero in numeros) {
+    print(numero);
+  }
+
+  print('Imprimindo nome com for in');
+  for (var nome in nomes) {
+    print(nome);
+  }
+
+  print('Imprimindo nomes com for convencional e break');
+  for (var i = 0; i < nomes.length; i++) {
+    print(nomes[i]);
+    if (i == 1) {
+      break;
+  }
+}
+
+  print('Imprimindo nomes for in e break');
+  for (var nome in nomes) {
+    print(nome);
+    if (nome == 'Elã') {
+        break;
+  }
+}
+  print('Imprimindo nomes com for convencional e continuel');
+  for (var i = 0; i < nomes.length; i++) {
+    if (i == 1 || i == 3) {
+    continue;
+    }
+    print(nomes[i]);
+  }
+}
+```
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  While e Do while - Aula 9.1
+
+<h2><p align="left">
+
+- **While** - Só tenho a condição, o incremento é por minha conta. Executa até que a condição seja verdadeira:
+
+```dart
+While (número <= 10) {
+print (número);
+numero++;
+```
+- **Do while**  - Execute (do) até que (while):
+
+```dart
+Do{
+Print (índice);
+} While (índice > 0);
+```
+<h4><p align="left">
+
+```dart
+void main() {
+  //   Inicio          Condição        Incremnto
+  // for( var i = 0; i < nomes.length; i ++)
+
+  // while só tem a condição
+  var numero = 0;
+  print('while convencional');
+  while (numero <= 10) {
+    print(numero);
+    numero++;
+  }
+
+  // DoWhile
+  print('DoWhile');
+  var indice = 0;
+  print('While não será executado');
+
+  // execte até que seja true
+  while (indice > 0) {
+    print(indice);
+    indice++;
+  }
+
+  // faça até que:
+  do {
+    print(indice);
+    // indice++;
+  } while (indice > 0);
+}
+```
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Iterables - Aula 9.
+
+<h2><p align="left">
+
+- **.where** - Filtra o item especificado;
+- **.forEache** - Imprime itens de lista um abaixo do outro;
+- **.takeWile** - Executa até chegar na condição desejada;
+- **.tolist** - Transformar em lista;
+- **.skipWhile** - Remove itens até item especificado.
+- **.map** - Transforma lista em outra.
+- **.reversed** - Inverter ordem de itens.
+
+
+<h4><p align="left">
+
+```dart
+void main() {
+  var numeros = List.generate(10, (index) => index);
+
+  // for (var i = 0; i < numeros.length; i++) {
+  //   if (i == 5) {
+  //     continue;
+  //   }
+  //   print(numeros[i]);
+  // }
+  numeros.where((numero) => numero != 5).forEach((numero) => print(numero));
+
+  final numerosAte6 = numeros
+      .takeWhile((numero) => numero < 7)
+      .where((numero) => numero != 5)
+      .toList();
+  print(numeros[1]);
+  print(numerosAte6);
+
+  final numerosRemoverAte5 = numeros.skipWhile((numero) => numero < 6).toList();
+  print(numerosRemoverAte5);
+
+  var nomes = ['Rodrigo', 'Elã', 'Heitor', 'Helena', 'Hian'];
+  var nomesSkip = nomes.skipWhile((nome) {
+    if (nome != 'Elã') {
+      return true;
+    } else {
+      return false;
+    }
+  }).toList();
+  print(nomesSkip);
+
+  var numeroStrList = numeros.map((numeros) {
+    return numeros + 10;
+  }).toList();
+  print(numeroStrList);
+
+  final numerosRevertido = numeros.reversed.toList();
+  print(numerosRevertido);
+}
+```
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
 
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
 

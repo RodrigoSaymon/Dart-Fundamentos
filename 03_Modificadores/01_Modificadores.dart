@@ -11,6 +11,6 @@ void main() {
 
   // Const (Só pode ser usada em momento de Compilação)
   const nomeCompletoConst = 'Rodrigo Saymon';
-  const nomeCompletoConst2 = nomeCompleto;
+  // const nomeCompletoConst2 = nomeCompleto;
 
 }
