@@ -44,7 +44,12 @@ class Rodrigo {
     int Idade = 36;
   }
 }
+
+Saída: 
+----------------------------------------------------------------------------------------
+Teste
 ````
+
 ---
 <h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
 
@@ -61,6 +66,8 @@ class Rodrigo {
 <h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Primeiro Projeto - Aula 2
 
 <h2><p align="left">
+
+No seu computador, crie uma pasta com o nomeCom o terminal aberto, digite:
 
 ````  
 >dart creat  
