@@ -79,6 +79,45 @@ No seu computador, crie uma pasta. Com o terminal aberto detro dela, digite:
 <h1 align="/center"> <img src="https://raw.githubusercontent.com/RodrigoSaymon/Dart-Fundamentos/03b0dc0c1298d2ca32b2fe4f00e6290380130e1b/src/assets/Primeiro%20Projeto.gif" width="800px"/
 
 ---
+
+<h2><p align="left">
+
+Caso queira conecta-la ao repositório do Git Hub:
+
+- Crie uma conta no Git Hub.
+
+   - Nesse link, dou algumas dicas sobre edição do README.md (https://github.com/RodrigoSaymon/Guia-de-Edicao-Readme).
+   
+- Crie um novo repositório e copie o código disponibilizado como no exemplo seguinte:
+
+![][codigo3]
+
+- Dentro da mesma pata onde foi criado o projeto em Dart, abra o terminal e digite “git clone”, em seguida, cole o código copiado no Git Hub e pressione a tecla “Enter”, como no exemplo abaixo:
+
+````
+>git clone https://github.com/RodrigoSaymon/Guia-de-Edicao-Readme
+````
+![][codigo4]
+
+Pronto, seu projeto já está conectado ao repositório.
+
+----
+
+Para enviar seus projetos direto pelo VS Code:
+
+- Com o VS Code aberto, vá na opção controle de código fonte. 
+   - Nela, você verá o número de atualizações realizadas e disponíveis para ser enviadas ao repositório Git Hub;
+
+- Insira uma mensagem, especificando o que está sento modificado;
+
+- Selecione os arquivos que deseja enviar na opção add +;
+
+- Confirme o envio e logo após sincronize.
+
+Pronto, seus arquivos já estão disponíveis no repositório Git Hub.
+
+---
+
 <h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
 
 ---
@@ -1117,3 +1156,8 @@ void main() {
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
 
 [codigo2]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-2.jpg?raw=true
+
+[codigo3]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/Or%C3%A7amento13.gif?raw=true
+
+[codigo4]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/Or%C3%A7amento14.gif?raw=true
+
