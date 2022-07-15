@@ -67,7 +67,7 @@ Teste
 
 <h2><p align="left">
 
-No seu computador, crie uma pasta com o nomeCom o terminal aberto, digite:
+No seu computador, crie uma pasta. Com o terminal aberto detro dela, digite:
 
 ````  
 >dart creat  
