@@ -56,5 +56,4 @@ void main() {
     var dadosPaciente2 = paciente2.split('|');
   print(dadosPaciente2);
   }
- 
-}
+ }

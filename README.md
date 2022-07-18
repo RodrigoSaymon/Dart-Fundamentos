@@ -1153,6 +1153,192 @@ void main() {
 ![][codigo] 
 
 
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Convenções e manipulações - Aula 10.
+
+<h2><p align="left">
+
+Manipulando Strings:
+
+- **.substring(7)** - Pula os 7 primeiros caracteres.
+*.substring(0,7)* - Pega os caracteres do intervalo definido.
+
+- **.startsWith('M')** - Busca na palavra se ela contém os caracteres especificados nos parâmetros.
+
+- **.toLowerCase()** - Converte todos os caracteres em letras minúsculas.
+
+- **.toUpperCase()** - Converte todos os caracteres em letras maiúsculas.
+
+- **.contains** - Busca na palavra se ela contém os caracteres especificados nos parâmetros.
+
+- **Concatenação** - Soma de variáveis e Strings utilizando o +.
+
+- **Interpolação** - Soma de variáveis e Strings utilizando o $.
+  - Se for utilizar alguma função junto com a variável, deve ser envolvido com ${ }.
+
+- **.split('|')** - Quebra uma String pelo separados especifico e transforma em uma lista.
+
+
+
+<h4><p align="left">
+
+```dart
+void main() {
+  final nome = 'Rodrigo Saymon';
+
+  // .substring(7) - Pula os 7 primeiros caracteres.
+  var subStringNome = nome.substring(7);
+  print(subStringNome);
+
+  // .substring(0,7) - Pega os caracteres do intervalo definido.
+
+  var subStringNome2 = nome.substring(0, 7);
+  print(subStringNome2);
+
+  var sexo = 'Masculino';
+  var sexoSigla = sexo.substring(0, 1);
+  print(sexoSigla);
+  if (sexoSigla == 'M') {
+    print('Olá seu sexo é masculino');
+  }
+  // ao ives disso posso fazer o seguinte:
+
+  //.startsWith('M') - Busca na paxavra se ela contem os caracteres especificados nos parametros.
+  // precisa está exatamente igual.
+  //.toLowerCase() - Converte todos os caracteres em letras minusculas.
+  //.toUpperCase() - Converte todos os caracteres em letras maiusculas.
+
+  if (sexo.toLowerCase().startsWith('M')) {
+    print('Olá seu sexo é masculino');
+  }
+  // .contains - Busca na paxavra se ela contem os caracteres especificados nos parametros.
+
+  if (nome.contains('Saymon')) {
+    print('é da familia Borges');
+  }
+
+  var primeiroNome = 'Rodrigo';
+  var segundoNome = 'Saymon';
+
+  // Concatenação - Soma de variaveis e Strings utilizando o +.
+  var saudacao = 'Olá' + primeiroNome + segundoNome + 'seja muito bem vindo';
+  // Interpolação - Soma de variaveis e Strings utilizando o $.
+  // Se for utilizar alguma função junto com a variável, deve ser envolvido com ${}.
+  var saudacao2 = 'Olá $primeiroNome $segundoNome seja muito bem vindo';
+
+// .split('|') - Quebra uma String pelo separados especifico e trasforma em uma lista.
+  var paciente = 'Rodrigo Saymon|36|Desenvolvedor|RN';
+
+  var dadosPaciente = paciente.split('|');
+  print(dadosPaciente);
+
+  var pacientes = [
+    'Rodrigo Saymon|36|Desenvolvedor|RN',
+        'Elã Borges|33|Administrativo|SP',
+        'Heitor|8|estudante|PB',
+  ];
+  for (var paciente2 in pacientes) {
+    var dadosPaciente2 = paciente2.split('|');
+  print(dadosPaciente2);
+  }
+ }
+```
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Convenções e manipulações - Aula 10.1
+
+<h2><p align="left">
+
+Manipulando Numeros:
+
+- **.toString()** - Converte números em Strings;
+
+- **.isNegative** - Verifica se um valor é negativo;
+
+- **.round()** - Arredonda um valor double e retorna um inteiro;
+
+ - **.roundToDouble()** - Arredonda um valor double e retorna um double;
+
+- **.parse()** - Converte Strings em valor numérico. Se o valor mencionado não for numérico, o Dart retorna com erro.
+
+- **.tryParse()** - Converte Strings em valor numérico. Se o valor mencionado não for numérico, o Dart retorna null.
+
+- **.toStringAsFixed(2)** - Fixa o número de casas decimais que quero ter no meu número e arredonda o valor.
+
+
+<h4><p align="left">
+
+```dart
+void main() {
+  final idade = 36;
+
+  // .toString() - Converte numeros em Strings
+
+  print('Sua idade é' + idade.toString());
+  print('Sua idade é $idade');
+
+  // .isNegative - Verifica se um valor é negativo
+
+  final valor = -20;
+  if (valor.isNegative) {
+    print('valor');
+  }
+
+  // .round() - Arredonda um valor double e retorna um inteiro.
+  // .roundToDouble() - Arredonda um valor double e retorna um double.
+
+  final valorDouble = 10.65;
+  print(valorDouble.round());
+  print(valorDouble.roundToDouble());
+
+  // .parse() - Converte string em valor numerico. Se o valor mencionado não for numerico, o dart retorna com erro.
+  // .tryParse() - Converte string em valor numerico. Se o valor mencionado não for numerico, o dart retorna null.
+
+  final valorString = '30';
+  final valorint = int.parse(valorString);
+  final valorint2 = int.tryParse(valorString);
+  print(valorint);
+  print(valorint2);
+
+  // .toStringAsFixed(2) - Fixa o numero de casas decimais que quero ter no meu numero e arredonda o valor.
+
+  final precoCamiseta = 30.65354;
+  print(precoCamiseta.toStringAsFixed(2));
+}
+```
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
+
+
+
+
+
+
 [codigo]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-4.png?raw=true
 
 [codigo2]: https://github.com/RodrigoSaymon/Dart-Fundamentos/blob/main/src/assets/Banner-2.jpg?raw=true
