@@ -92,7 +92,7 @@ Caso queira conecta-la ao repositório do Git Hub:
 
 ![][codigo3]
 
-- Dentro da mesma pata onde foi criado o projeto em Dart, abra o terminal e digite “git clone”, em seguida, cole o código copiado no Git Hub e pressione a tecla “Enter”, como no exemplo abaixo:
+- Dentro da mesma pasta onde foi criado o projeto em Dart, abra o terminal e digite “git clone”, em seguida, cole o código copiado no Git Hub e pressione a tecla “Enter”, como no exemplo abaixo:
 
 ````
 >git clone https://github.com/RodrigoSaymon/Guia-de-Edicao-Readme
