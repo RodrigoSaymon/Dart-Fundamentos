@@ -1333,6 +1333,54 @@ void main() {
 
 ![][codigo] 
 
+<h1 p align="left"><img width="25" height ="25" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">  Como fazer Debug - Aula 11
+
+<h2><p align="left">
+
+
+
+ O Debug ajuda a entender como as coisas estão funcionando. Para iniciar, você vai na opção Executar e Depurar.
+
+- 🔴 - Adiciona um ponto de parada (break);
+
+- **Debug** - para a execução no ponto selecionado 🔴.
+
+- **Variáveis** - mostra as variáveis que foram executadas e o que tem dentro como: valor e tipo;
+
+- **BreakPoints** - vejo todas as paradas que foi solicitado;
+
+- *ALL Exeception* - para a execução antes do erro;
+
+- ⏯️ Continua a execução até o próximo BreakPoint;
+
+- ⤵️ Vai pra próxima linha;
+
+- ⬇️ Entra dentro da função;
+
+- ⬆️ Sai de dentro da função;
+
+- 🔄 Restarte;
+
+- ⏹️ Stop;
+
+- **Evaluate in debug console (F8)** - executa apenas a parte do código selecionado;
+ 
+ 
+
+---
+
+<h4 align="center">Código desenvolvido no curso Academia do Flutter 2.0 ministrado por Rodrigo Rahman.
+
+---
+
+![][codigo2] 
+
+
+[<h2>Linkedin](https://www.linkedin.com/in/rodrigotbass/)
+
+
+![][codigo] 
+
 
 
 
